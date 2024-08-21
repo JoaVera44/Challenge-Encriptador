@@ -46,4 +46,4 @@ Las "llaves" de encriptación que utilizaremos son las siguientes:
 1. Clona este repositorio en tu máquina local:
 
    ```bash
-   git clone [https://github.com/JoaVera44/Challenge-Encriptador.git
+   git clone https://github.com/JoaVera44/Challenge-Encriptador.git
