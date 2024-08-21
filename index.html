@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./styles/style.css"> 
+</head>
+
+<body class="body">
+    <header class="titulo">
+        <img class="titulo_logo" src="./assets/a.png" alt="Logo de Alura">
+        <h1 id="ingreseAqui" class="titulo_indicacion">Ingrese el texto aqui </h1>
+    </header>
+
+    <main class="main">
+    
+
+        <section class="indicaciones">
+            <form class="indicaciones_formulario" id="formulario" onformchange="listoParaEncriptar">
+                <p>
+                    <textarea class="indicaciones_formulario_cuadro_de_texto" id="formularioCampo"></textarea>
+                </p>
+            </form>
+        
+            <section class="indicaciones_acomodar" id="acomodar">
+                <div class="indicaciones_acomodar_resultado" id="resultadoEncriptar" style="display: none;">
+                    <p class="indicaciones_acomodar_resultado_p" id="textoEncriptado"></p>
+                    <button onclick="copiar()" id="botonCopiar" class="botones_separar_copiar">Copiar</button>
+                </div>
+                <section class="indicaciones_acomodar_noEncontrado" id="noEncontrado">
+                <img class="indicaciones_acomodar_muneco" src="./assets/Muñeco.png" alt="un muñeco con una lupa">
+                <p class="indicaciones_acomodar_p1">Ningun mensaje fue encontrado</p>
+                <p class="indicaciones_acomodar_p2">Ingresa el texto que deseas encriptar o desencriptar</p>
+                </section>
+            </section>
+        </section>
+
+        <section class="advertencia">
+            
+            <p><strong class="advertencia_exclamacion"> ! </strong> Solo letras minusculas y sin acentos</p>
+        </section>
+        <section class="botones">
+            
+            <button onclick="encriptar()" id="botonEncriptar" class="botones_encriptar">Encriptar</button>
+            
+            <button onclick="desencriptar()" id="botonDesencriptar" class="botones_desencriptar">Desencriptar</button>
+           
+        </section>
+   
+        
+
+    </main>
+
+    <footer class="footer">
+
+    </footer>
+    <script src="./app.js"></script>
+</body>
+</html>
